@@ -44,7 +44,7 @@ function Display() {
         const jsonData = await response.json();
         setData(jsonData);
       } catch (error) {
-        console.log("Error fetching data: ", error);
+        console.error("Error fetching data: ", error);
       }
     };
     fetchData();
